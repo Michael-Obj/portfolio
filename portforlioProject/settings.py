@@ -30,9 +30,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'michael-oluwole.up.railway.app' ]
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'michael-oluwole.up.railway.app' ]
 
-CSRF_TRUSTED_ORIGINS = [ 'https://michael-oluwole.up.railway.app' ]
+# CSRF_TRUSTED_ORIGINS = [ 'https://michael-oluwole.up.railway.app' ]
 
 
 # Application definition
@@ -108,8 +109,11 @@ WSGI_APPLICATION = "portforlioProject.wsgi.application"
 #     )
 # }
 
+# DATABASES = {
+#     'default': dj_database_url.parse('postgresql://postgres:tjYfHGlQHKAtlfiyEmPVAmVeVTIObHGf@autorack.proxy.rlwy.net:34069/railway')
+# }
 DATABASES = {
-    'default': dj_database_url.parse('postgresql://postgres:tjYfHGlQHKAtlfiyEmPVAmVeVTIObHGf@autorack.proxy.rlwy.net:34069/railway')
+    'default': dj_database_url.parse('postgresql://myportfolio_f2js_user:Hd4HHNLZdPEwko0dDqIDkKHe5zyGa7ls@dpg-cthl1fpopnds73a59t2g-a.oregon-postgres.render.com/myportfolio_f2js')
 }
 
 # Password validation
