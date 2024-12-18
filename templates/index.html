@@ -3944,6 +3944,42 @@
                                                                         </div>
                                                                     </div>
 
+                                                                    <marquee 
+                                                                        direction="" 
+                                                                        behavior="scroll" 
+                                                                        scrollamount="4" 
+                                                                        scrolldelay="100" 
+                                                                        loop="-1" 
+                                                                        height="50px" 
+                                                                        width="100%"
+                                                                    >
+                                                                        This is a scrolling marquee with custom attributes!
+                                                                    </marquee> 
+
+                                                                    <!-- <div class="marquee">This is a CSS Scrolling Marquee!</div> -->
+
+<style>
+  .marquee {
+    width: 100%;
+    /* background-color: #f0f0f0; */
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: scroll-left 10s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+
+
+
                                                                     <!-- <div class="mb-2 mt-14 xl:mb-0 xl:mt-20">
                                                                         <div class="items-center grid-cols-12 overflow-hidden md:grid">
                                                                             <div class="hidden col-span-2 md:inline-block">
