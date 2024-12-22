@@ -569,10 +569,14 @@
                 src: url("https://rainbowit.net/themes/inbio/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2") format("woff2");
             }
         </style>
-        <link rel="icon" href="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/cropped-logo-32x32.png" sizes="32x32" />
+        <link rel="icon" href="{% static 'images/oluwole-michael.png' %}" sizes="32x32" />
+        <link rel="icon" href="{% static 'images/oluwole-michael.png' %}" sizes="192x192" />
+        <link rel="apple-touch-icon" href="{% static 'images/load.gif' %}" />
+        <meta name="msapplication-TileImage" content="{% static 'images/load.gif' %}" />
+        <!-- <link rel="icon" href="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/cropped-logo-32x32.png" sizes="32x32" />
         <link rel="icon" href="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/cropped-logo-192x192.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/cropped-logo-180x180.png" />
-        <meta name="msapplication-TileImage" content="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/cropped-logo-270x270.png" />
+        <meta name="msapplication-TileImage" content="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/cropped-logo-270x270.png" /> -->
         <style type="text/css" id="wp-custom-css">
             .elementor-text-editor p {
                 color: inherit;
@@ -714,9 +718,14 @@
         class="page-template page-template-templates page-template-sidenavs page-template-templatessidenavs-php page page-id-176 wp-embed-responsive inbio-drag-drop-custom theme-inbio woocommerce-no-js elementor-default elementor-kit-5 elementor-page elementor-page-176 page-consulting template-color-1 header-sticky header-layout-2 0 dark-version active_dark_mode"
     >
         <!-- Start Right Demo  -->
-        <div class="rn-right-demo">
+        <!-- <div class="rn-right-demo">
             <button class="demo-button">
                 <span class="text">40+ Demos</span>
+            </button>
+        </div> -->
+        <div class="rn-right-demo">
+            <button class="demo-button">
+                <a href="{% static 'pdfs/cv_michael_oluwole.pdf' %}" download target="_blank"><span class="text">Download CV</span></a>
             </button>
         </div>
         <!-- End Right Demo  -->
@@ -1652,9 +1661,14 @@
             <div class="d-none d-xl-block">
                 <header class="rn-header-area d-flex align-items-start flex-column left-header-style">
                     <div id="rainbow-sticky-placeholder"></div>
-                    <div class="logo-area">
+                    <!-- <div class="logo-area">
                         <a href="https://rainbowit.net/themes/inbio/" title="InBio" rel="home">
                             <img class="dark-logo" src="https://rainbowit.net/themes/inbio/wp-content/themes/inbio/assets/images/logo/logo-06.png" alt="InBio" />
+                        </a>
+                    </div> -->
+                    <div class="logo-area" style="width: 120px;">
+                        <a href="#" title="Michael-Oluwole" rel="home">
+                            <img class="dark-logo" src="{% static 'images/developer.png' %}" alt="Michael-Oluwole" />
                         </a>
                     </div>
                     <nav id="sideNav" class="mainmenu-nav navbar-example2">
