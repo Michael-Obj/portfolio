@@ -91,16 +91,16 @@ WSGI_APPLICATION = "portforlioProject.wsgi.application"
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myPortfolio',
-        'USER': os.getenv("USER"),
-        'PASSWORD': os.getenv("PASSWORD"),
-        'HOST': 'localhost',
-        'PORT': os.getenv("PORT"),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'myPortfolio',
+#         'USER': os.getenv("USER"),
+#         'PASSWORD': os.getenv("PASSWORD"),
+#         'HOST': 'localhost',
+#         'PORT': os.getenv("PORT"),
+#     }
+# }
 
 # DATABASES = {
 #     'default': dj_database_url.parse('postgresql://postgres:tjYfHGlQHKAtlfiyEmPVAmVeVTIObHGf@autorack.proxy.rlwy.net:34069/railway')
