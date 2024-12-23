@@ -91,30 +91,24 @@ WSGI_APPLICATION = "portforlioProject.wsgi.application"
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'myPortfolio',
-#         'USER': os.getenv("USER"),
-#         'PASSWORD': os.getenv("PASSWORD"),
-#         'HOST': 'localhost',
-#         'PORT': os.getenv("PORT"),
-#     }
-# }
-
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default='postgresql://postgres:tjYfHGlQHKAtlfiyEmPVAmVeVTIObHGf@autorack.proxy.rlwy.net:34069/railway'
-#         # default=os.getenv('DATABASE_URL')  # Fallback to DATABASE_URL environment variable
-#     )
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myPortfolio',
+        'USER': os.getenv("USER"),
+        'PASSWORD': os.getenv("PASSWORD"),
+        'HOST': 'localhost',
+        'PORT': os.getenv("PORT"),
+    }
+}
 
 # DATABASES = {
 #     'default': dj_database_url.parse('postgresql://postgres:tjYfHGlQHKAtlfiyEmPVAmVeVTIObHGf@autorack.proxy.rlwy.net:34069/railway')
 # }
-DATABASES = {
-    'default': dj_database_url.parse('postgresql://myportfolio_f2js_user:Hd4HHNLZdPEwko0dDqIDkKHe5zyGa7ls@dpg-cthl1fpopnds73a59t2g-a.oregon-postgres.render.com/myportfolio_f2js')
-}
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgresql://myportfolio_f2js_user:Hd4HHNLZdPEwko0dDqIDkKHe5zyGa7ls@dpg-cthl1fpopnds73a59t2g-a.oregon-postgres.render.com/myportfolio_f2js')
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
