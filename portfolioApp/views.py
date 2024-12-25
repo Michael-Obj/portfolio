@@ -44,9 +44,8 @@ def contactInquiry(request):
 
             # OTGGenerator([email], "SUCCESSFUL SUBMISSION OF INQUIRY!!!", """We kindly inform you that your inquiry has been sent to the church for prior attention. We will get back to you shortly. Thank you.""")
             # return render(request, "index.html", {"csrf_token": csrf_token})      --------
-            return JsonResponse({"status": "success", "message": "Form submitted successfully!"})
-            # return redirect("/")
-        return JsonResponse({"status": "error", "message": "Invalid request method."})
+            return JsonResponse({'success': True, 'message': 'Your message has been sent successfully!'})
+        return JsonResponse({'success': False, 'message': 'Invalid request method.'}, status=400)
 
     except Exception as ex:
         print(ex)
