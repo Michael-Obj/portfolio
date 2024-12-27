@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
 from . models import *
 from django.contrib import messages
@@ -51,13 +51,12 @@ def contactInquiry(request):
         print(ex)
 
 
-# @csrf_exempt  # Disable CSRF only if absolutely necessary (e.g., during testing)
-# def submit_form(request):
-#     if request.method == "POST":
-#         form = YourForm(request.POST)
-#         if form.is_valid():
-#             form.save()  # Save the data to the database
-#             return JsonResponse({"status": "success", "message": "Form submitted successfully!"})
-#         else:
-#             return JsonResponse({"status": "error", "message": "Form validation failed.", "errors": form.errors})
-#     return JsonResponse({"status": "error", "message": "Invalid request method."})
+
+
+def like_post(request, post_id):
+    if request.method == "POST":
+        post = get_object_or_404(Post, id=post_id)
+        post.likes += 1
+        post.save()
+        return JsonResponse({"success": True, "likes": post.likes})
+    return JsonResponse({"success": False, "error": "Invalid request method."}, status=400)
