@@ -12,8 +12,11 @@ class Contact(models.Model):
     def __str__(self):
         return f"{self.name}: {self.email} - {self.subject}" 
     
-    
 
 
-class ChurchLike(models.Model):
-    count = models.IntegerField(default=0)
+
+class Post(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    likes = models.IntegerField(default=116)
+
