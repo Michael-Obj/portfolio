@@ -106,9 +106,9 @@ WSGI_APPLICATION = "portforlioProject.wsgi.application"
 #     'default': dj_database_url.parse('postgresql://postgres:tjYfHGlQHKAtlfiyEmPVAmVeVTIObHGf@autorack.proxy.rlwy.net:34069/railway')
 # }
 
-# DATABASES = {
-#     'default': dj_database_url.parse('postgresql://myportfolio_f2js_user:Hd4HHNLZdPEwko0dDqIDkKHe5zyGa7ls@dpg-cthl1fpopnds73a59t2g-a.oregon-postgres.render.com/myportfolio_f2js')
-# }
+DATABASES = {
+    'default': dj_database_url.parse('postgresql://postgres:wmfhbnqapHXskJzpXmLtPoRmohZTQywm@autorack.proxy.rlwy.net:20367/railway')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
